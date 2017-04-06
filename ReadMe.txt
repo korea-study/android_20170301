@@ -1,1 +1,2 @@
-안드로이드 스터디
+Hello! 
+android study
