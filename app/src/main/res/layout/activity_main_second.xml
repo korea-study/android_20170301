@@ -31,30 +31,38 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/tableborderline"
+            android:weightSum="4"
             >
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="한식"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="양식"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="일식"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="중식"
                 />
         </TableRow>
@@ -65,37 +73,52 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="가격대"
         android:textColor="@color/colorDarkGraytone"
         />
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
         android:stretchColumns="*"
         >
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/tableborderline"
+            android:weightSum="4"
             >
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="전체"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="10만원 이하"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="10만원 이상"
                 />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tableborderline"
                 android:text="20만원 이상"
                 />
         </TableRow>
@@ -107,6 +130,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:text="시설/서비스"
         android:textColor="@color/colorDarkGraytone"
         />
