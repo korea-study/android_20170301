@@ -2,9 +2,5 @@
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
         "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
-        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     }
 ]

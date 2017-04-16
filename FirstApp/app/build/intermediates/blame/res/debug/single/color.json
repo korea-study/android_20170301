@@ -56,6 +56,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\color\\design_error.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_seek_thumb.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\color\\abc_tint_seek_thumb.xml"
     },
@@ -74,6 +78,10 @@
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\color\\design_tint_password_toggle.xml"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",

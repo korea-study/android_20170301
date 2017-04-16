@@ -32,6 +32,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\design_tint_password_toggle.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\color-v23\\design_tint_password_toggle.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },

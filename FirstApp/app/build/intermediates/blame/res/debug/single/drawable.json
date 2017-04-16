@@ -12,12 +12,24 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\borderline.xml",
+        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\drawable\\borderline.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cancel_icon.png",
+        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\drawable\\cancel_icon.png"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon.png",
+        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\drawable\\user_icon.png"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
@@ -46,6 +58,10 @@
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
@@ -80,6 +96,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
@@ -104,6 +124,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_vector_test.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
@@ -124,6 +148,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
@@ -134,6 +162,14 @@
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tableborderline.xml",
+        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\drawable\\tableborderline.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
