@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.company.demo.ExampleActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test"
+            />
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE!"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGraytone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/naver_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAVER"
+            />
+        <Button
+            android:id="@+id/tel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEL"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGraytone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START"
+            />
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGraytone"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/image_button_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pinkpig"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/image_button_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/flower"
+            android:visibility="visible"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>
