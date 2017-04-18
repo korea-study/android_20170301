@@ -12,13 +12,19 @@
             android:id="@+id/ex_intent_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="암시적Intent"
+            android:text="명시적intent"
             />
         <Button
             android:id="@+id/ex_receiver_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Receiver실행"
+            android:text="암시적intent"
+            />
+        <Button
+            android:id="@+id/ex_broadcast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="방송하기"
             />
 
     </LinearLayout>
