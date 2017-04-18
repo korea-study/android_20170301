@@ -11,17 +11,15 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/actionbar_title"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".MainSecondActivity"></activity>
-        <activity android:name=".ExampleActivity">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MainSecondActivity" />
+        <activity android:name=".ExampleActivity" />
+        <activity android:name=".Example2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
