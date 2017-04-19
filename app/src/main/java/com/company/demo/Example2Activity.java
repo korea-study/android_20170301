@@ -59,9 +59,9 @@ public class Example2Activity extends AppCompatActivity {
                 case R.id.ex_broadcast_button :
                     Log.d("KKKK", "onClick() : ex_broadcast_button");
                     Intent broadIntent = new Intent();
-                    broadIntent.setAction("com.hunt.lab.huntlab_client.view.receiver.TESTRECEIVER");
+                    broadIntent.setAction("action.ACTION_HUNT_CLIENT");
                     broadIntent.putExtra("message", "This message come from koreastudy");
-                    startActivity(broadIntent);
+                    sendBroadcast(broadIntent);
                     break;
             }
         }
