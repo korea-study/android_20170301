@@ -28,8 +28,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.company.demo.MainSecondActivity" >
-        </activity>
+        <activity android:name="com.company.demo.MainSecondActivity" />
+        <activity android:name="com.company.demo.ExampleActivity" />
     </application>
 
 </manifest>

@@ -204,6 +204,10 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_example.xml",
+        "source": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\src\\main\\res\\layout\\activity_example.xml"
+    },
+    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\layout\\notification_action_tombstone.xml"
     },

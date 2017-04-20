@@ -26,6 +26,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dh\.andro
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dh\.android\build-cache\f26bcac5beaf5d8345a35d947f6a8c1f52a30d7c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dh\.android\build-cache\126eb86bfeec8e5e8a58b0309dcbb8594054e989\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dh\.android\build-cache\c2c931070ab8a71fcb3b1e23e84a3b68927062ee\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\dh\.android\build-cache\92441d484e2444bd8abaf26ea89a8ff4a15430d0\output\AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -55,9 +56,13 @@ ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.
 	android:name
 		ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.company.demo.MainSecondActivity
-ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:21:9-22:20
+ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:21:9-65
 	android:name
 		ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:21:19-53
+activity#com.company.demo.ExampleActivity
+ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:22:9-62
+	android:name
+		ADDED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml:22:19-50
 uses-sdk
 INJECTED from D:\sourcetree\android_20170301\FirstApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\dh\.android\build-cache\088559e847fd41fd0c2d9f00f8428d6877123a3c\output\AndroidManifest.xml:21:5-23:62
@@ -72,6 +77,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dh\.andro
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dh\.android\build-cache\f26bcac5beaf5d8345a35d947f6a8c1f52a30d7c\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dh\.android\build-cache\126eb86bfeec8e5e8a58b0309dcbb8594054e989\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dh\.android\build-cache\c2c931070ab8a71fcb3b1e23e84a3b68927062ee\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\dh\.android\build-cache\92441d484e2444bd8abaf26ea89a8ff4a15430d0\output\AndroidManifest.xml:5:5-7:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\dh\.android\build-cache\088559e847fd41fd0c2d9f00f8428d6877123a3c\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
