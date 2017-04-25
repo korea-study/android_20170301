@@ -22,6 +22,8 @@ public class Example3Activity extends AppCompatActivity {
     Button threadButton = null;
     Button threadProgressButton = null;
     ProgressBar threadProgressBar = null;
+    Button threadProgressButton2 = null;
+    ProgressBar threadProgressBar2 = null;
 
     int threadCnt = 0;
 
@@ -39,10 +41,13 @@ public class Example3Activity extends AppCompatActivity {
         threadButton = (Button) findViewById(R.id.thread_button);
         threadProgressButton = (Button)findViewById(R.id.thread_progress_button);
         threadProgressBar = (ProgressBar) findViewById(thread_progress_bar);
+        threadProgressButton2 = (Button) findViewById(R.id.thread_progress_button2);
+        threadProgressBar2 = (ProgressBar) findViewById(R.id.thread_progress_bar2);
 
         threadStartButton.setOnClickListener(mClickListener);
         threadButton.setOnClickListener(mClickListener);
         threadProgressButton.setOnClickListener(mClickListener);
+        threadProgressButton2.setOnClickListener(mClickListener);
     }
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
@@ -102,8 +107,28 @@ public class Example3Activity extends AppCompatActivity {
                     };
                     pThread.start();
                     break;
-            }
 
+                case R.id.thread_progress_button2 :
+                    // Message 사용
+                    threadProgressBar2.setProgress(0);
+
+                    Thread p2Thread = new Thread(){
+                        public void run(){
+                            for(int i = 0 ; i < 10; i++){
+                                Log.d("kkkk", "for() i : " + i);
+                                try {
+                                    Thread.sleep(500);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                                Message message = pHandler.obtainMessage();
+                                pHandler.sendMessage(message);
+                            }
+                        }
+                    };
+                    p2Thread.start();
+                    break;
+            }
         }
     };
 
@@ -112,8 +137,8 @@ public class Example3Activity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-
-
+            Log.d("kkkk", "ProgressHandler");
+            threadProgressBar2.incrementProgressBy(10);
         }
     }
 

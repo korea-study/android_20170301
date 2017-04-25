@@ -54,6 +54,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         />
+    <Button
+        android:id="@+id/thread_progress_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress bar2"
+        />
+    <ProgressBar
+        android:id="@+id/thread_progress_bar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
 
 
 </LinearLayout>
