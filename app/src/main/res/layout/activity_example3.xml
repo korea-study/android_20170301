@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.company.demo.ex3.Example3Activity">
+
+    <TextView
+        android:id="@+id/thread_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="30dp"
+        android:text="start"
+        />
+    <TextView
+        android:id="@+id/thread_get_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textSize="30dp"
+        android:text="get count"
+        />
+
+    <Button
+        android:id="@+id/thread_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thread 시작"
+        />
+    <Button
+        android:id="@+id/thread_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가져오기"
+        />
+
+
+
+</LinearLayout>

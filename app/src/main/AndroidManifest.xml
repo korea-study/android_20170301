@@ -11,10 +11,11 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/actionbar_title"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainSecondActivity" />
         <activity android:name=".ExampleActivity" />
-        <activity android:name=".Example2Activity">
+        <activity android:name=".Example2Activity" />
+        <activity android:name=".ex3.Example3Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
