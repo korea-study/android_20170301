@@ -68,12 +68,12 @@
         "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "C:\\Users\\dh\\.android\\build-cache\\088559e847fd41fd0c2d9f00f8428d6877123a3c\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\dh\\.android\\build-cache\\76314b8cccd1b3bc89b7827bf9d1f5260732af5a\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "D:\\sourcetree\\android_20170301\\FirstApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
