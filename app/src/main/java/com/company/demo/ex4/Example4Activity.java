@@ -31,6 +31,7 @@ public class Example4Activity extends AppCompatActivity {
                 case R.id.music_play_button :
                     Intent serviceIntent = new Intent("com.company.demo.ex4.Example4Service");
                     serviceIntent.setPackage("com.company.demo");
+                    serviceIntent.putExtra("startButton", "startButton");
                     startService(serviceIntent);
                     break;
                 case R.id.music_stop_button :
