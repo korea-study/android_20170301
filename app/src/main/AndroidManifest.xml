@@ -16,13 +16,24 @@
         <activity android:name=".ExampleActivity" />
         <activity android:name=".Example2Activity" />
         <activity android:name=".ex3.Example3Activity" />
-        <activity android:name=".ex6.Example6Activity">
+        <activity android:name=".ex4.Example4Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".ex6.Example6Activity" />
+
+        <service
+            android:name=".ex4.Example4Service"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.company.demo.ex4.Example4Service" />
+
+            </intent-filter>
+        </service>
     </application>
+
 </manifest>

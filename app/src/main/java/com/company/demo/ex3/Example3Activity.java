@@ -28,6 +28,7 @@ public class Example3Activity extends AppCompatActivity {
     int threadCnt = 0;
 
     Handler handler = new Handler();
+    Handler handler2 = new Handler();
     ProgressHandler pHandler = new ProgressHandler();
 
     @Override
@@ -66,7 +67,32 @@ public class Example3Activity extends AppCompatActivity {
                                 handler.post(new Runnable() {
                                     @Override
                                     public void run() {
-                                        threadTextViewCount.setText("Current Count : " + threadCnt);
+                                        Log.d("kkkk", "run(" + threadCnt + ")");
+                                        threadTextViewCount.setText("Current Count- : " + threadCnt);
+                                    }
+
+                                });
+                                handler.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Log.d("kkkk", "run(" + threadCnt + ")");
+                                        threadTextViewCount.setText("Current Count-- : " + threadCnt);
+                                    }
+
+                                });
+                                handler.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Log.d("kkkk", "run(" + threadCnt + ")");
+                                        threadTextViewCount.setText("Current Count--- : " + threadCnt);
+                                    }
+
+                                });
+                                handler.post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        Log.d("kkkk", "run(" + threadCnt + ")");
+                                        threadTextViewCount.setText("Current Count---- : " + threadCnt);
                                     }
 
                                 });
