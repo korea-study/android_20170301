@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="title_activity_preferences">PreferencesActivity</string>
+    <string name="title_activity_files">FilesActivity</string>
+    <string name="title_activity_database">DatabaseActivity</string>
 </resources>
