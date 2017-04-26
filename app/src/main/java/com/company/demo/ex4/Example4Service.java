@@ -21,17 +21,24 @@ public class Example4Service extends Service {
     public void onCreate() { // Service 최초 실행시 호출
         super.onCreate();
         Log.d(TAG, "onCreate()");
+        initPlayer();
+
+    }
+
+    public void initPlayer(){
+        Log.d(TAG, "initPlayer()");
         mediaPlayer = MediaPlayer.create(this, R.raw.dubstep);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) { // Service 실행 이후에 재 호출 시 호출하는 method
         Log.d(TAG, "onStartCommand()");
+        Log.d(TAG, "intent.getStringExtra(\"whatButton\") : " + intent.getStringExtra("whatButton"));
 
-        Log.d(TAG, "intent.getStringExtra(\"startButton\") : " + intent.getStringExtra("startButton"));
-        Log.d(TAG, "intent.getStringExtra(\"tempStopButton\") : " + intent.getStringExtra("tempStopButton"));
-        Log.d(TAG, "intent.getStringExtra(\"stopButton\") : " + intent.getStringExtra("stopButton"));
-
+        if(mediaPlayer==null){
+            Log.d(TAG, "mediaPlayer==null");
+            initPlayer();
+        }
         if(intent.getStringExtra("whatButton").equals("startButton")){
             if(pauseTime==0){ // 처음부터 실행
                 mediaPlayer.start();
@@ -40,11 +47,15 @@ public class Example4Service extends Service {
                 mediaPlayer.start();
             }
         } else if(intent.getStringExtra("whatButton").equals("tempStopButton")){
-            mediaPlayer.pause();
-            pauseTime = mediaPlayer.getCurrentPosition();
-            Log.d(TAG, "pauseTime-pause() : " + pauseTime);
+            if(mediaPlayer.isPlaying()) {
+                mediaPlayer.pause();
+                pauseTime = mediaPlayer.getCurrentPosition();
+                Log.d(TAG, "pauseTime-pause() : " + pauseTime);
+            }
         } else if(intent.getStringExtra("whatButton").equals("stopButton")){
             mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
             pauseTime = 0;
             Log.d(TAG, "pauseTime-stop() : " + pauseTime);
         } else {
