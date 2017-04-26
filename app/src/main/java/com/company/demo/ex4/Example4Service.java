@@ -61,7 +61,10 @@ public class Example4Service extends Service {
         } else {
             Log.d(TAG, "onStartCommand() else");
         }
-        return super.onStartCommand(intent, flags, startId);
+//        return super.onStartCommand(intent, flags, startId); // default
+        return START_STICKY; // service GC 이후 가용메모리 늘어나면 service 재실행
+//        return START_NOT_STICKY; // service GC 이후 가용메모리 늘어나도 service 재실행 안함
+//        return START_REDELIVER_INTENT; // START_STICKY과 똑같지만 startService() 작업에서 intent를 던져주는 것에서 조금 다르다.
     }
 
     @Override
