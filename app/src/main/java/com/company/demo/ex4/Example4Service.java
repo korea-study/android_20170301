@@ -11,6 +11,7 @@ import com.company.demo.R;
 public class Example4Service extends Service {
     private String TAG = "Example4Service";
 
+    int pauseTime = 0;
     MediaPlayer mediaPlayer = null;
     public Example4Service() {
         Log.d(TAG, "Example4Service constructor()");
@@ -27,13 +28,25 @@ public class Example4Service extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) { // Service 실행 이후에 재 호출 시 호출하는 method
         Log.d(TAG, "onStartCommand()");
 
-        if(intent.getStringExtra("startButton").equals("startButton")){
-            try {
-//                mediaPlayer.prepare();
+        Log.d(TAG, "intent.getStringExtra(\"startButton\") : " + intent.getStringExtra("startButton"));
+        Log.d(TAG, "intent.getStringExtra(\"tempStopButton\") : " + intent.getStringExtra("tempStopButton"));
+        Log.d(TAG, "intent.getStringExtra(\"stopButton\") : " + intent.getStringExtra("stopButton"));
+
+        if(intent.getStringExtra("whatButton").equals("startButton")){
+            if(pauseTime==0){ // 처음부터 실행
                 mediaPlayer.start();
-            } catch (Exception e) {
-                e.printStackTrace();
+            } else { // pause 이후에 실행
+                mediaPlayer.seekTo(pauseTime);
+                mediaPlayer.start();
             }
+        } else if(intent.getStringExtra("whatButton").equals("tempStopButton")){
+            mediaPlayer.pause();
+            pauseTime = mediaPlayer.getCurrentPosition();
+            Log.d(TAG, "pauseTime-pause() : " + pauseTime);
+        } else if(intent.getStringExtra("whatButton").equals("stopButton")){
+            mediaPlayer.stop();
+            pauseTime = 0;
+            Log.d(TAG, "pauseTime-stop() : " + pauseTime);
         } else {
             Log.d(TAG, "onStartCommand() else");
         }
@@ -44,6 +57,7 @@ public class Example4Service extends Service {
     public void onDestroy() {
         super.onDestroy();
         Log.d(TAG, "onDestroy()");
+        mediaPlayer.release();
     }
 
     @Override
