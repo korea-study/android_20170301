@@ -1,60 +1,74 @@
 package com.company.demo.ex6;
 
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.LinearLayout;
+import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.widget.ImageView;
 
 import com.company.demo.R;
 
 public class Example6Activity extends AppCompatActivity {
 
-    LinearLayout canvasLayout = null;
-    Canvas canvas = null;
+    private ImageView imageView = null;
+    Handler mHandler = new Handler();
+    boolean animationGoStop = true;
+    int animationNumber = 0;
+
+    final int[] animationImageList = {R.drawable.ex_frame_01,
+            R.drawable.modify_ex_frame_02,
+            R.drawable.modify_ex_frame_03,
+            R.drawable.modify_ex_frame_04,
+            R.drawable.modify_ex_frame_05,
+            R.drawable.modify_ex_frame_06,
+            R.drawable.modify_ex_frame_07,
+            R.drawable.modify_ex_frame_08,
+            R.drawable.modify_ex_frame_09,
+            R.drawable.modify_ex_frame_10,
+            R.drawable.modify_ex_frame_11,
+            R.drawable.modify_ex_frame_12,
+            R.drawable.modify_ex_frame_13,
+            R.drawable.modify_ex_frame_14,
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_example6);
 
-        canvasLayout = (LinearLayout) findViewById(R.id.canvas_layout);
-        canvas = new Canvas();
+        imageView = (ImageView) findViewById(R.id.anim_image_view);
+        imageView.setRotation(180);
 
-        CustomView customView = new CustomView(this);
-        setContentView(customView);
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                while (animationGoStop){
+                    synchronized (this){
+                        mHandler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                imageView.setImageResource(animationImageList[animationNumber]);
+                            }
+                        });
+                        Log.d("kkkk", "animationNumber : " + animationNumber);
+                        if(animationNumber==13){
+                            animationNumber = 0;
+                        } else {
+                            animationNumber += 1;
+                        }
+                        try{
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        };
+
+        thread.start();
     }
 
 
-    class CustomView extends View {
-        Paint paint1;
-        Paint paint2;
-        Paint paint3;
-
-
-        public CustomView(Context context) {
-            super(context);
-            paint1 = new Paint();
-            paint1.setColor(Color.RED);
-
-            paint2 = new Paint();
-            paint2.setStyle(Paint.Style.STROKE);
-            paint2.setStrokeWidth(3);
-            paint2.setColor(Color.GREEN);
-
-            paint3 = new Paint();
-            paint3.setColor(Color.BLUE);
-            paint3.setStyle(Paint.Style.FILL);
-        }
-
-        @Override
-        protected void onDraw(Canvas canvas) {
-            super.onDraw(canvas);
-            canvas.drawRect(100, 100, 200, 200, paint1);
-            canvas.drawCircle(50, 160, 40, paint2);
-            canvas.drawCircle(300, 400, 50, paint3);
-        }
-    }
 }

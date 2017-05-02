@@ -7,6 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -16,14 +18,14 @@
         <activity android:name=".ExampleActivity" />
         <activity android:name=".Example2Activity" />
         <activity android:name=".ex3.Example3Activity" />
-        <activity android:name=".ex4.Example4Activity">
+        <activity android:name=".ex4.Example4Activity" />
+        <activity android:name=".ex6.Example6Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ex6.Example6Activity" />
 
         <service
             android:name=".ex4.Example4Service"
@@ -31,7 +33,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.company.demo.ex4.Example4Service" />
-
             </intent-filter>
         </service>
     </application>
