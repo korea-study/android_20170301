@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.company.demo.R;
@@ -15,6 +17,8 @@ public class Example6Activity extends AppCompatActivity {
     boolean animationGoStop = true;
     int animationNumber = 0;
 
+    // I/Choreographer(1378): Skipped 55 frames!  The application may be doing too much work on its main thread.
+    // image source file size over 1MB > modify_ 200KB
     final int[] animationImageList = {R.drawable.ex_frame_01,
             R.drawable.modify_ex_frame_02,
             R.drawable.modify_ex_frame_03,
@@ -30,6 +34,11 @@ public class Example6Activity extends AppCompatActivity {
             R.drawable.modify_ex_frame_13,
             R.drawable.modify_ex_frame_14,
     };
+
+
+
+//    tweened animation
+    private ImageView tweenedImageView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +77,13 @@ public class Example6Activity extends AppCompatActivity {
         };
 
         thread.start();
+
+
+//        tweened
+        tweenedImageView = (ImageView) findViewById(R.id.tweened_anim_image_view);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.scale_images);
+        tweenedImageView.startAnimation(animation);
+
     }
 
 

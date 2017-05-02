@@ -10,8 +10,19 @@
 
     <ImageView
         android:id="@+id/anim_image_view"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:background="@color/colorLightGraytone"
+        />
+
+    <ImageView
+        android:id="@+id/tweened_anim_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhitetone"
+        android:src="@drawable/ironman"
         />
 
 </LinearLayout>
