@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.company.demo.Example2Activity">
+    tools:context="com.company.demo.ex2.Example2Activity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

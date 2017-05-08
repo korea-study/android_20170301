@@ -1,4 +1,4 @@
-package com.company.demo;
+package com.company.demo.ex1;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.company.demo.R;
 
 public class ExampleActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.company.demo;
+package com.company.demo.ex2;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.company.demo.R;
 
 public class Example2Activity extends AppCompatActivity {
 
