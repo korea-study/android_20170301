@@ -8,4 +8,11 @@
         <item>간절기 통 면팬츠</item>
     </string-array>
 
+    <array name="spinner_entries">
+        <item>서울</item>
+        <item>대전</item>
+        <item>대구</item>
+        <item>부산</item>
+    </array>
+
 </resources>

@@ -10,6 +10,7 @@ import android.widget.FrameLayout;
 
 import com.company.demo.R;
 import com.company.demo.ex7.fragment.ABestFragment;
+import com.company.demo.ex7.fragment.SpinnerFragment;
 
 public class Example7Activity extends AppCompatActivity {
     private String TAG= "MainFragmentActivity";
@@ -50,6 +51,8 @@ public class Example7Activity extends AppCompatActivity {
                     transaction.replace(R.id.frame_layout, fragment, "ABEST");
                     break;
                 case R.id.fragment_button_two :
+                    fragment= new SpinnerFragment();
+                    transaction.replace(R.id.frame_layout, fragment, "SPINNER");
                     break;
                 case R.id.fragment_button_three :
                     break;
