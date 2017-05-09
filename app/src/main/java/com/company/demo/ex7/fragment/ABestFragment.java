@@ -74,7 +74,11 @@ public class ABestFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_abest, container, false);
         // Inflate the layout for this fragment
-        ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(getResources().getStringArray(R.array.best_items)));
+        getActivity().getResources();
+        getResources();
+        getResources().getStringArray(R.array.best_items);
+
+        ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(getActivity().getResources().getStringArray(R.array.best_items)));
 //        String[] itemList = getActivity().getResources().getStringArray(R.array.best_items);
 
 

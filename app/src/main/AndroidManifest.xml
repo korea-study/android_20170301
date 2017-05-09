@@ -19,13 +19,7 @@
         <activity android:name=".ex2.Example2Activity" />
         <activity android:name=".ex3.Example3Activity" />
         <activity android:name=".ex4.Example4Activity" />
-        <activity android:name=".ex6.Example6Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ex6.Example6Activity" />
 
         <service
             android:name=".ex4.Example4Service"
@@ -36,7 +30,13 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".ex7.Example7Activity"></activity>
+        <activity android:name=".ex7.Example7Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
