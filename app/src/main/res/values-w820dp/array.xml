@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="best_items">
+        <item>디젤 청남방</item>
+        <item>체크패턴 셔츠</item>
+        <item>스판 슬랙스</item>
+        <item>간절기 통 면팬츠</item>
+    </array>
+
+    <array name="database_items">
+        <item>student.db</item>
+        <item>student_tmp.db</item>
+    </array>
+
+
+</resources>

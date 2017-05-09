@@ -36,9 +36,7 @@
             </intent-filter>
         </service>
 
-        <activity
-            android:name=".ex7.Example7Activity"
-            android:label="@string/title_activity_example7"></activity>
+        <activity android:name=".ex7.Example7Activity"></activity>
     </application>
 
 </manifest>
