@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "744482656779",
+    "firebase_url": "https://koreastudy-1a8e5.firebaseio.com",
+    "project_id": "koreastudy-1a8e5",
+    "storage_bucket": "koreastudy-1a8e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744482656779:android:4113410cbedbf138",
+        "android_client_info": {
+          "package_name": "com.company.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744482656779-tl0q888m05taa6l0rimun2mrmkd027n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDE14IbZOxmi-En3pGvLJ_UXxGvWInp_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
