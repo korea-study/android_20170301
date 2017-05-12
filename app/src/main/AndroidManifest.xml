@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.company.demo">
 
+    <!-- [START gcm_permission] -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- [END gcm_permission] -->
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -20,7 +25,6 @@
         <activity android:name=".ex3.Example3Activity" />
         <activity android:name=".ex4.Example4Activity" />
         <activity android:name=".ex6.Example6Activity" />
-
         <service
             android:name=".ex4.Example4Service"
             android:enabled="true"
@@ -29,14 +33,7 @@
                 <action android:name="com.company.demo.ex4.Example4Service" />
             </intent-filter>
         </service>
-
-        <activity android:name=".ex7.Example7Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ex7.Example7Activity" />
 
         <service
             android:name=".ex8.MyFirebaseMessagingService"
@@ -54,6 +51,13 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+        <activity android:name=".ex8.Example8Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

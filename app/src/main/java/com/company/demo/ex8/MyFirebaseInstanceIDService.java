@@ -1,15 +1,16 @@
 package com.company.demo.ex8;
 
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
+import com.google.firebase.iid.FirebaseInstanceIdService;
 
-public class MyFirebaseInstanceIDService extends Service {
+public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     public MyFirebaseInstanceIDService() {
     }
 
     @Override
-    public IBinder onBind(Intent intent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    public void onTokenRefresh() {
+        super.onTokenRefresh();
+
     }
+
+
 }
